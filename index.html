@@ -1,89 +1,923 @@
-<p>&lt;p&gt;Google Play Link: https://play.google.com/store/apps/details?id=com.twoHandedGames.Elementalist.io&amp;amp;hl=en &lt;/p&gt;</p>
-<p>&lt;p&gt;Hi everybody I&amp;rsquo;m Tar&amp;#305;k. I am an indie game developer and I am the sole creator of Elementalist. I've been working on this game for 7 months and I'd like to talk a bit about the current state:&lt;/p&gt;</p>
-<p>&lt;p&gt; &lt;/p&gt;</p>
-<p>&lt;p&gt;Elementalist is an IO game based on RPG. The main character is a wizard who can use 4 types of elements, namely Earth, Fire, Water and Wind. There are various game modes with different challenges and rewards. You can collect trade materials throughout the game modes and spend them in the shop to get new skins which boost your strength in the battlefield.&lt;/p&gt;</p>
-<p>&lt;p&gt; &lt;/p&gt;</p>
-<p>&lt;p&gt;Game Mechanics&lt;br /&gt;<br />There are two types of leveling system in the battlefield; the &amp;quot;Character Level&amp;quot; and the &amp;quot;Element Level&amp;quot;:&lt;/p&gt;</p>
-<p>&lt;p&gt;-&gt; &amp;quot;Character Level&amp;quot; increases either by killing your enemeies or collecting random element pieces on the map&lt;/p&gt;</p>
-<p>&lt;p&gt;You get higher attack, defense, speed and healing stats&lt;br /&gt;<br />-&gt; &amp;quot;Element Level&amp;quot; increases as you gather the elemenet pieces of your wizard type (i.e. Fire wizard &lt;-&gt; Fire Element)&lt;/p&gt;</p>
-<p>&lt;p&gt;You get a specific stat increase based on the element type:&lt;br /&gt;<br />Earth -&gt; Increased Defense,&lt;br /&gt;<br />Fire -&gt; Increased Attack,&lt;br /&gt;<br />Water -&gt; Increased Healing,&lt;br /&gt;<br />Wind -&gt; Increased Speed&lt;br /&gt;<br />&lt;/p&gt;</p>
-<p>&lt;p&gt;-&gt; Each wizard has 4 unique abilities and a 5th ability which is a dash.&lt;/p&gt;</p>
-<p>&lt;p&gt; &lt;/p&gt;</p>
-<p>&lt;p&gt;Game Modes&lt;br /&gt;<br />Currently there are 5 main modes in the game but the framework I used allows me to create new modes easily so I will add new modes as the time goes. Let&amp;rsquo;s talk about exists modes:&lt;/p&gt;</p>
-<p>&lt;p&gt; &lt;/p&gt;</p>
-<p>&lt;p&gt;IO&lt;br /&gt;<br />&lt;/p&gt;</p>
-<p>&lt;p&gt;Description:&lt;/p&gt;</p>
-<p>&lt;p&gt;The main goal is to finish the game in higher rankings to earn more gold.&lt;/p&gt;</p>
-<p>&lt;p&gt;Your score increases based on how many pieces you collected and how many enemies you killed&lt;/p&gt;</p>
-<p>&lt;p&gt;Your score is reset on death&lt;/p&gt;</p>
-<p>&lt;p&gt;Setting:&lt;/p&gt;</p>
-<p>&lt;p&gt;Teams : Single&lt;br /&gt;<br />Players : 10 players&lt;br /&gt;<br />Type : PvP&lt;br /&gt;<br />Reward : Gold&lt;br /&gt;<br />Duration: 150 seconds&lt;br /&gt;<br />&lt;/p&gt;</p>
-<p>&lt;p&gt;Mining&lt;br /&gt;<br />&lt;/p&gt;</p>
-<p>&lt;p&gt;Description:&lt;/p&gt;</p>
-<p>&lt;p&gt;Part1 : Mining: the first 100 seconds of the game, everyone is immune to damage&lt;br /&gt;<br />There are lodes located in the map, when destroyed, they scatter color essences&lt;br /&gt;<br />Part2 : Battle: the last 100 seconds of the game, everyone is vulnerable to damage&lt;br /&gt;<br />You lose all the essences you collected on death&lt;br /&gt;<br />You only win what's left in your inventory when the game ends&lt;br /&gt;<br />Setting:&lt;/p&gt;</p>
-<p>&lt;p&gt;Teams : Single&lt;br /&gt;<br />Players : 7 players&lt;br /&gt;<br />Type : PvE -&gt; PvP&lt;br /&gt;<br />Reward : Color Esssence&lt;br /&gt;<br />Duration: 200 seconds&lt;br /&gt;<br />&lt;/p&gt;</p>
-<p>&lt;p&gt;IOHR (Invasion of Hybrid Rebels)&lt;br /&gt;<br />&lt;/p&gt;</p>
-<p>&lt;p&gt;Description:&lt;/p&gt;</p>
-<p>&lt;p&gt;The team of 5 players fights againts the Hybrid Rebel Army to defeat all the enemies&lt;br /&gt;<br />Hybrid Rebels can drop war loot when killed&lt;br /&gt;<br />On death, you spawn from healing fountain which can only respawn one player at a time&lt;br /&gt;<br />The healing fountain has to recover its strength in order to resurrect a player&lt;br /&gt;<br />Game is over when all players are dead&lt;br /&gt;<br />Setting&lt;/p&gt;</p>
-<p>&lt;p&gt;Teams : 5 players&lt;br /&gt;<br />Players : 5 players&lt;br /&gt;<br />Type : PvE -&gt; Team vs the Hybrid Rebel Army&lt;br /&gt;<br />Reward : War Loot&lt;br /&gt;<br />Duration: 250 seconds&lt;br /&gt;<br />Arena&lt;br /&gt;<br />&lt;/p&gt;</p>
-<p>&lt;p&gt;Description:&lt;/p&gt;</p>
-<p>&lt;p&gt;All players fight against each other until only one remainds on the ground&lt;br /&gt;<br />The sole remainer wins the arena cup&lt;br /&gt;<br />You cannot respawn on death&lt;br /&gt;<br />As the time passes, the walls around the arena narrows down&lt;br /&gt;<br />Setting&lt;/p&gt;</p>
-<p>&lt;p&gt;Teams : Single&lt;br /&gt;<br />Players : 16 players&lt;br /&gt;<br />Type : PvP&lt;br /&gt;<br />Reward : Arena Cup&lt;br /&gt;<br />Duration: 180 seconds&lt;br /&gt;<br />Boss&lt;br /&gt;<br />&lt;/p&gt;</p>
-<p>&lt;p&gt;Description:&lt;/p&gt;</p>
-<p>&lt;p&gt;The team of 5 players fights againts the Rebel Boss to defeat him&lt;br /&gt;<br />The Rebel Boss spawns soldiers using his skill&lt;br /&gt;<br />Each player has 3 lifes to respawn.&lt;br /&gt;<br />You cannot level up unless you defeat the boss further advance in the game&lt;br /&gt;<br />There is a boss for every 5th level and in order to advance, you need to defeat the boss&lt;br /&gt;<br />Setting&lt;/p&gt;</p>
-<p>&lt;p&gt;Teams : 5 players&lt;br /&gt;<br />Players : 5 players&lt;br /&gt;<br />Type : PvE -&gt; Team vs the Rebel Boss&lt;br /&gt;<br />Reward : Boss Chest &amp;amp; Level-Up permission&lt;br /&gt;<br />Duration: 180 seconds&lt;br /&gt;<br />Skills&lt;br /&gt;<br />Currently there are 4 unique skills for each elementalist and a 5th dash skill for every element -&gt; In the future, the skill book -not yet implemented- will allow elementalists to learn new abilities&lt;/p&gt;</p>
-<p>&lt;p&gt; &lt;/p&gt;</p>
-<p>&lt;p&gt;Earth&lt;br /&gt;<br />- Nail&lt;br /&gt;<br />Cooldown : 3 seconds&lt;/p&gt;</p>
-<p>&lt;p&gt;Damage : 21&lt;/p&gt;</p>
-<p>&lt;p&gt;Extra Effect: Reduce defense %15 for 5 seconds - tossing effect for 0.2 seconds&lt;/p&gt;</p>
-<p>&lt;p&gt;Effect Limit: 2 Player&lt;/p&gt;</p>
-<p>&lt;p&gt;https://youtu.be/g7g5EOZ1bes&lt;/p&gt;</p>
-<p>&lt;p&gt;- Walls&lt;br /&gt;<br />Cooldown : 10 seconds&lt;/p&gt;</p>
-<p>&lt;p&gt;Damage : 20&lt;/p&gt;</p>
-<p>&lt;p&gt;Extra Effect: Stun for 1.5 seconds&lt;/p&gt;</p>
-<p>&lt;p&gt;Effect Limit: 4 Player&lt;/p&gt;</p>
-<p>&lt;p&gt;https://youtu.be/W_HrCqnIa-I&lt;/p&gt;</p>
-<p>&lt;p&gt;- Rock&lt;br /&gt;<br />Cooldown : 8 seconds&lt;/p&gt;</p>
-<p>&lt;p&gt;Damage : 33&lt;/p&gt;</p>
-<p>&lt;p&gt;Extra Effect: Tossing effect for 0.5 seconds&lt;/p&gt;</p>
-<p>&lt;p&gt;Effect Limit: -&lt;/p&gt;</p>
-<p>&lt;p&gt;Rock Pieces&lt;br /&gt;<br />Damage : 10&lt;br /&gt;<br />Extra Effect: -&lt;br /&gt;<br />Effect Limit: 1 Player&lt;br /&gt;<br />https://youtu.be/jgrtmeqK3Z4&lt;/p&gt;</p>
-<p>&lt;p&gt;- Untouchable&lt;br /&gt;<br />Cooldown : 12 seconds&lt;br /&gt;<br />Damage : -&lt;br /&gt;<br />Extra Effect: Immune everything for 2 seconds&lt;br /&gt;<br />https://youtu.be/6rOO3Ao_2fA&lt;/p&gt;</p>
-<p>&lt;p&gt; &lt;/p&gt;</p>
-<p>&lt;p&gt;Fire&lt;br /&gt;<br />- Fire Ball&lt;br /&gt;<br />Cooldown : 3 seconds&lt;br /&gt;<br />Damage : 30&lt;br /&gt;<br />Extra Effect: -&lt;br /&gt;<br />Range : 8&lt;br /&gt;<br />Effect Limit: 3 Player&lt;br /&gt;<br />https://youtu.be/7rwlL0j3iaE&lt;/p&gt;</p>
-<p>&lt;p&gt;- Dragon Breath&lt;br /&gt;<br />Cooldown : 12 seconds&lt;br /&gt;<br />Damage : each 0.25 seconds applies 6 damage for maximum 4 player in area&lt;br /&gt;<br />Extra Effect: Applies &amp;quot;Silence&amp;quot; effect for every players in area https://youtu.be/t1Hmsync1uc&lt;br /&gt;<br />- Demon Hall&lt;br /&gt;<br />Cooldown : 13 seconds&lt;/p&gt;</p>
-<p>&lt;p&gt;Fire Circle - Damage : 18 - Extra Effect: - - Effect Limit: 5&lt;/p&gt;</p>
-<p>&lt;p&gt;Hall - Damage : Each 1 seconds applies 4 damage for maximum 5 player in area&lt;/p&gt;</p>
-<p>&lt;p&gt;Extra Effect: Applies &amp;quot;Heal Prohibition&amp;quot; effect for every player in area&lt;br /&gt;<br />https://youtu.be/VviSXnWuiN0&lt;/p&gt;</p>
-<p>&lt;p&gt;- Torch&lt;br /&gt;<br />Cooldown : 13 seconds&lt;br /&gt;<br />Damage : -&lt;br /&gt;<br />Extra Effect: Increase attack %20&lt;br /&gt;<br />https://youtu.be/_o7iuziJtr4&lt;/p&gt;</p>
-<p>&lt;p&gt; &lt;/p&gt;</p>
-<p>&lt;p&gt;Water&lt;br /&gt;<br />- Needles&lt;br /&gt;<br />Cooldown : 3 seconds&lt;/p&gt;</p>
-<p>&lt;p&gt;Each Needle&lt;br /&gt;<br />Damage : 20&lt;br /&gt;<br />Extra Effect: Slow %20&lt;br /&gt;<br />Effect Limit: 1 Player&lt;br /&gt;<br />https://youtu.be/x2pGI4eKWYo&lt;/p&gt;</p>
-<p>&lt;p&gt;- Frozen Road&lt;br /&gt;<br />Cooldown : 10 seconds&lt;br /&gt;<br />Damage : 15&lt;br /&gt;<br />Extra Effects: Slow %60 After 2 seconds applies &amp;quot;Move Prohibition&amp;quot; effect for players in area&lt;br /&gt;<br />Effect Limit: 4 Player&lt;br /&gt;<br />https://youtu.be/1VixwgBviqs&lt;/p&gt;</p>
-<p>&lt;p&gt;- Needle Rain&lt;br /&gt;<br />Cooldown : 8 seconds&lt;br /&gt;<br />Damage : 35&lt;br /&gt;<br />Extra Effect: -&lt;br /&gt;<br />Effect Limit: 4&lt;br /&gt;<br />https://youtu.be/DGDXee698_c&lt;/p&gt;</p>
-<p>&lt;p&gt;- Healing Water&lt;br /&gt;<br />Cooldown : 15 seconds&lt;br /&gt;<br />Damage : -&lt;br /&gt;<br />Extra Effects: For 5 seconds, player heal %2 for each 1 seconds&lt;br /&gt;<br />https://youtu.be/NI51YTMOWqs&lt;/p&gt;</p>
-<p>&lt;p&gt; &lt;/p&gt;</p>
-<p>&lt;p&gt;Wind&lt;br /&gt;<br />- Razor Wave&lt;br /&gt;<br />Cooldown : 3 seconds&lt;br /&gt;<br />Damage : 20&lt;br /&gt;<br />Extra Effect: -&lt;br /&gt;<br />https://youtu.be/-75CjLw0K8U&lt;/p&gt;</p>
-<p>&lt;p&gt;- Tornado&lt;br /&gt;<br />Cooldown : 12 seconds&lt;br /&gt;<br />Damage : Each 0.75 seconds applies 4 damage&lt;br /&gt;<br />Extra Effect: Pulls players in.&lt;br /&gt;<br />https://youtu.be/Vd015l34JBI&lt;/p&gt;</p>
-<p>&lt;p&gt;- Serial Waves&lt;br /&gt;<br />Cooldown : 10 seconds&lt;br /&gt;<br />Damage :&lt;/p&gt;</p>
-<p>&lt;p&gt;First Two Wave: 15&lt;br /&gt;<br />Last Wave: 20&lt;br /&gt;<br />Extra Effects : - Effect Limit: Each wave has 3 player limit.&lt;/p&gt;</p>
-<p>&lt;p&gt;https://youtu.be/bortFpOxkl0&lt;/p&gt;</p>
-<p>&lt;p&gt;- Push&lt;br /&gt;<br />Cooldown : 12 seconds&lt;br /&gt;<br />Damage : 10&lt;br /&gt;<br />Extra Effects: Applies tossing effect&lt;br /&gt;<br />https://youtu.be/nOJpT59fsu0&lt;/p&gt;</p>
-<p>&lt;p&gt;Equipments&lt;br /&gt;<br />Wizards can equip an armor and a weapon from a selection of unique items&lt;/p&gt;</p>
-<p>&lt;p&gt;There are 6 levels to equipments which can be differentiated by color:&lt;/p&gt;</p>
-<p>&lt;p&gt;(MIN) White -&gt; Green -&gt; Blue -&gt; Yellow -&gt; Purple -&gt; Orange (MAX)&lt;br /&gt;<br />Each equipment in all levels have 6 typeswith unique effects&lt;/p&gt;</p>
-<p>&lt;p&gt;Higher level equipments have more effects embedded in them&lt;/p&gt;</p>
-<p>&lt;p&gt;####### Weapon Lv: White &amp;amp; Green Blue &amp;amp; Yellow Purple &amp;amp; Orange&lt;br /&gt;<br />Weapon Types: ------------- ------------- ---------------&lt;/p&gt;</p>
-<p>&lt;p&gt;Cooldown Reducer: Cooldown Stun Attack&lt;/p&gt;</p>
-<p>&lt;p&gt;Critical Damage Dealer: Critical Chance Critical Damage Damage (to low health)&lt;/p&gt;</p>
-<p>&lt;p&gt;Armor Penetration: Armor Penetration Slow Defense Reduce&lt;/p&gt;</p>
-<p>&lt;p&gt;Health Stealer: Health Steal Attack(overtime) Healing (on kill)&lt;/p&gt;</p>
-<p>&lt;p&gt;Poisoner: Poison Burn Reduced Healing (on foe)&lt;/p&gt;</p>
-<p>&lt;p&gt;True Damage Dealer: True Damage Cooldown (on kill) Percent Damage&lt;/p&gt;</p>
-<p>&lt;p&gt;###### Armor Lv: White &amp;amp; Green &amp;amp; Blue Yellow &amp;amp; Purple &amp;amp; Orange&lt;br /&gt;<br />Armor Types: -------------------- ------------------------&lt;/p&gt;</p>
-<p>&lt;p&gt;Critical Damage Reducer: Reduced Criticial Damage Defense&lt;/p&gt;</p>
-<p>&lt;p&gt;Dodger: Dodge Slow (on foe)&lt;/p&gt;</p>
-<p>&lt;p&gt;Heal Improver: Healing Defense (overtime)&lt;/p&gt;</p>
-<p>&lt;p&gt;Health Regener: Health Regenaration Health (overtime)&lt;/p&gt;</p>
-<p>&lt;p&gt;Damage Reflector (Amount): Reflect Damage (by amount) Reduce Health&lt;/p&gt;</p>
-<p>&lt;p&gt;Damage Reflector (Chance): Reflect Damage (channce) Health Restore (when low)&lt;/p&gt;</p>
+<div data-reddit-rtjson="{&quot;entityMap&quot;:{&quot;0&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://play.google.com/store/apps/details?id=com.twoHandedGames.Elementalist.io&amp;hl=en&quot;}},&quot;1&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://youtu.be/g7g5EOZ1bes&quot;}},&quot;2&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://youtu.be/W_HrCqnIa-I&quot;}},&quot;3&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://youtu.be/jgrtmeqK3Z4&quot;}},&quot;4&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://youtu.be/6rOO3Ao_2fA&quot;}},&quot;5&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://youtu.be/7rwlL0j3iaE&quot;}},&quot;6&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://youtu.be/t1Hmsync1uc&quot;}},&quot;7&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://youtu.be/VviSXnWuiN0&quot;}},&quot;8&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://youtu.be/_o7iuziJtr4&quot;}},&quot;9&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://youtu.be/x2pGI4eKWYo&quot;}},&quot;10&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://youtu.be/1VixwgBviqs&quot;}},&quot;11&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://youtu.be/DGDXee698_c&quot;}},&quot;12&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://youtu.be/NI51YTMOWqs&quot;}},&quot;13&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://youtu.be/-75CjLw0K8U&quot;}},&quot;14&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://youtu.be/Vd015l34JBI&quot;}},&quot;15&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://youtu.be/bortFpOxkl0&quot;}},&quot;16&quot;:{&quot;type&quot;:&quot;LINK&quot;,&quot;mutability&quot;:&quot;MUTABLE&quot;,&quot;data&quot;:{&quot;url&quot;:&quot;https://youtu.be/nOJpT59fsu0&quot;}}},&quot;blocks&quot;:[{&quot;key&quot;:&quot;3a415&quot;,&quot;text&quot;:&quot;Hi everybody I&rsquo;m Tarık. I am an indie game developer and I am the sole creator of Elementalist. I've been working on this game for 7 months and I'd like to talk a bit about the current state:&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[{&quot;offset&quot;:82,&quot;length&quot;:12,&quot;style&quot;:&quot;BOLD&quot;}],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;blt2q&quot;,&quot;text&quot;:&quot;Elementalist is an IO game based on RPG. The main character is a wizard who can use 4 types of elements, namely Earth, Fire, Water and Wind. There are various game modes with different challenges and rewards. You can collect trade materials throughout the game modes and spend them in the shop to get new skins which boost your strength in the battlefield.&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;9j8p4&quot;,&quot;text&quot;:&quot;&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;2tk9u&quot;,&quot;text&quot;:&quot;Google Play Link: https://play.google.com/store/apps/details?id=com.twoHandedGames.Elementalist.io&amp;hl=en&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:18,&quot;length&quot;:86,&quot;key&quot;:0}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;6iqpp&quot;,&quot;text&quot;:&quot;&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;2mnbe&quot;,&quot;text&quot;:&quot;Game Mechanics&quot;,&quot;type&quot;:&quot;header-one&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;9ebtg&quot;,&quot;text&quot;:&quot;There are two types of leveling system in the battlefield; the \&quot;Character Level\&quot; and the \&quot;Element Level\&quot;:&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;m4i3&quot;,&quot;text&quot;:&quot;-&gt; \&quot;Character Level\&quot; increases either by killing your enemeies or collecting random element pieces on the map&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;9b8lq&quot;,&quot;text&quot;:&quot;You get higher attack, defense, speed and healing stats&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;57b9&quot;,&quot;text&quot;:&quot;-&gt; \&quot;Element Level\&quot; increases as you gather the elemenet pieces of your wizard type (i.e. Fire wizard &lt;-&gt; Fire Element)&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;14sq4&quot;,&quot;text&quot;:&quot;You get a specific stat increase based on the element type:&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;49i66&quot;,&quot;text&quot;:&quot;Earth -&gt; Increased Defense,&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;e7mod&quot;,&quot;text&quot;:&quot;Fire -&gt; Increased Attack,&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;6jo1r&quot;,&quot;text&quot;:&quot;Water -&gt; Increased Healing,&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;4j9dm&quot;,&quot;text&quot;:&quot;Wind -&gt; Increased Speed&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;e2k9r&quot;,&quot;text&quot;:&quot;-&gt; Each wizard has 4 unique abilities and a 5th ability which is a dash.&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;3fq6e&quot;,&quot;text&quot;:&quot;Game Modes&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;19c9r&quot;,&quot;text&quot;:&quot;Currently there are 5 main modes in the game but the framework I used allows me to create new modes easily so I will add new modes as the time goes. Let&rsquo;s talk about exists modes:&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;3tmbn&quot;,&quot;text&quot;:&quot;IO&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;c738&quot;,&quot;text&quot;:&quot;Description:&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:12,&quot;style&quot;:&quot;ITALIC&quot;}],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;arpqf&quot;,&quot;text&quot;:&quot;The main goal is to finish the game in higher rankings to earn more gold.&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;2gfs4&quot;,&quot;text&quot;:&quot;Your score increases based on how many pieces you collected and how many enemies you killed&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;f7k8u&quot;,&quot;text&quot;:&quot;Your score is reset on death&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;6qe2n&quot;,&quot;text&quot;:&quot;Setting:&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:8,&quot;style&quot;:&quot;ITALIC&quot;}],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;ft148&quot;,&quot;text&quot;:&quot;Teams : Single&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;eq9rj&quot;,&quot;text&quot;:&quot;Players : 10 players&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;4dl43&quot;,&quot;text&quot;:&quot;Type : PvP&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;168j5&quot;,&quot;text&quot;:&quot;Reward : Gold&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;90utc&quot;,&quot;text&quot;:&quot;Duration: 150 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;bnsqv&quot;,&quot;text&quot;:&quot;Mining&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;3pee7&quot;,&quot;text&quot;:&quot;Description:&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:12,&quot;style&quot;:&quot;ITALIC&quot;}],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;3d80h&quot;,&quot;text&quot;:&quot;Part1 : Mining: the first 100 seconds of the game, everyone is immune to damage&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;5d8n5&quot;,&quot;text&quot;:&quot;There are lodes located in the map, when destroyed, they scatter color essences&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;2kdj6&quot;,&quot;text&quot;:&quot;Part2 : Battle: the last 100 seconds of the game, everyone is vulnerable to damage&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;6qcbp&quot;,&quot;text&quot;:&quot;You lose all the essences you collected on death&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;95st5&quot;,&quot;text&quot;:&quot;You only win what's left in your inventory when the game ends&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;5autq&quot;,&quot;text&quot;:&quot;Setting:&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:8,&quot;style&quot;:&quot;ITALIC&quot;}],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;110fk&quot;,&quot;text&quot;:&quot;Teams : Single&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;6fb0o&quot;,&quot;text&quot;:&quot;Players : 7 players&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;e4fj&quot;,&quot;text&quot;:&quot;Type : PvE -&gt; PvP&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;2k5vn&quot;,&quot;text&quot;:&quot;Reward : Color Esssence&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;7srt8&quot;,&quot;text&quot;:&quot;Duration: 200 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;6c6fr&quot;,&quot;text&quot;:&quot;IOHR (Invasion of Hybrid Rebels)&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;eq6ma&quot;,&quot;text&quot;:&quot;Description:&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:12,&quot;style&quot;:&quot;ITALIC&quot;}],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;e2vl9&quot;,&quot;text&quot;:&quot;The team of 5 players fights againts the Hybrid Rebel Army to defeat all the enemies&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;dvgck&quot;,&quot;text&quot;:&quot;Hybrid Rebels can drop war loot when killed&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;el5ei&quot;,&quot;text&quot;:&quot;On death, you spawn from healing fountain which can only respawn one player at a time&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;6nbll&quot;,&quot;text&quot;:&quot;The healing fountain has to recover its strength in order to resurrect a player&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;ej0ou&quot;,&quot;text&quot;:&quot;Game is over when all players are dead&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;ehs74&quot;,&quot;text&quot;:&quot;Setting&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:7,&quot;style&quot;:&quot;ITALIC&quot;}],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;3bln5&quot;,&quot;text&quot;:&quot;Teams : 5 players&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;et0v1&quot;,&quot;text&quot;:&quot;Players : 5 players&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;2m48i&quot;,&quot;text&quot;:&quot;Type : PvE -&gt; Team vs the Hybrid Rebel Army&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;8v911&quot;,&quot;text&quot;:&quot;Reward : War Loot&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;4md3&quot;,&quot;text&quot;:&quot;Duration: 250 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;a6h8&quot;,&quot;text&quot;:&quot;Arena&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;25usj&quot;,&quot;text&quot;:&quot;Description:&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:12,&quot;style&quot;:&quot;ITALIC&quot;}],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;tl09&quot;,&quot;text&quot;:&quot;All players fight against each other until only one remainds on the ground&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;derr1&quot;,&quot;text&quot;:&quot;The sole remainer wins the arena cup&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;dvgtj&quot;,&quot;text&quot;:&quot;You cannot respawn on death&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;ecu2n&quot;,&quot;text&quot;:&quot;As the time passes, the walls around the arena narrows down&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;22fbi&quot;,&quot;text&quot;:&quot;Setting&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:7,&quot;style&quot;:&quot;ITALIC&quot;}],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;ar9q&quot;,&quot;text&quot;:&quot;Teams : Single&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;eucn9&quot;,&quot;text&quot;:&quot;Players : 16 players&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;6r2ot&quot;,&quot;text&quot;:&quot;Type : PvP&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;at7d7&quot;,&quot;text&quot;:&quot;Reward : Arena Cup&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;4nmvb&quot;,&quot;text&quot;:&quot;Duration: 180 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;87i7b&quot;,&quot;text&quot;:&quot;Boss&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;8busr&quot;,&quot;text&quot;:&quot;Description:&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:12,&quot;style&quot;:&quot;ITALIC&quot;}],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;fg1n6&quot;,&quot;text&quot;:&quot;The team of 5 players fights againts the Rebel Boss to defeat him&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;flup5&quot;,&quot;text&quot;:&quot;The Rebel Boss spawns soldiers using his skill&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;22j7&quot;,&quot;text&quot;:&quot;Each player has 3 lifes to respawn.&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;21u4t&quot;,&quot;text&quot;:&quot;You cannot level up unless you defeat the boss further advance in the game&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;j8mr&quot;,&quot;text&quot;:&quot;There is a boss for every 5th level and in order to advance, you need to defeat the boss&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;7aj6k&quot;,&quot;text&quot;:&quot;Setting&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:7,&quot;style&quot;:&quot;ITALIC&quot;}],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;40mgv&quot;,&quot;text&quot;:&quot;Teams : 5 players&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;f8kpv&quot;,&quot;text&quot;:&quot;Players : 5 players&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;eo2kt&quot;,&quot;text&quot;:&quot;Type : PvE -&gt; Team vs the Rebel Boss&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;er4ee&quot;,&quot;text&quot;:&quot;Reward : Boss Chest &amp; Level-Up permission&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;2565c&quot;,&quot;text&quot;:&quot;Duration: 180 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;easfl&quot;,&quot;text&quot;:&quot;Skills&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;7f3mi&quot;,&quot;text&quot;:&quot;Currently there are 4 unique skills for each elementalist and a 5th dash skill for every element -&gt; In the future, the skill book -not yet implemented- will allow elementalists to learn new abilities&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;q2ek&quot;,&quot;text&quot;:&quot;Earth&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;ft143&quot;,&quot;text&quot;:&quot;- Nail&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;3ffch&quot;,&quot;text&quot;:&quot;Cooldown : 3 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;3t3us&quot;,&quot;text&quot;:&quot;Damage : 21&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;ev24g&quot;,&quot;text&quot;:&quot;Extra Effect: Reduce defense %15 for 5 seconds - tossing effect for 0.2 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;7irlo&quot;,&quot;text&quot;:&quot;Effect Limit: 2 Player&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;866nf&quot;,&quot;text&quot;:&quot;https://youtu.be/g7g5EOZ1bes&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:28,&quot;key&quot;:1}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;ftpbr&quot;,&quot;text&quot;:&quot;- Walls&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;b69m7&quot;,&quot;text&quot;:&quot;Cooldown : 10 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;5pa79&quot;,&quot;text&quot;:&quot;Damage : 20&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;4gktq&quot;,&quot;text&quot;:&quot;Extra Effect: Stun for 1.5 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;7l951&quot;,&quot;text&quot;:&quot;Effect Limit: 4 Player&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;iotk&quot;,&quot;text&quot;:&quot;https://youtu.be/W_HrCqnIa-I&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:28,&quot;key&quot;:2}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;6hone&quot;,&quot;text&quot;:&quot;- Rock&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;dtf0i&quot;,&quot;text&quot;:&quot;Cooldown : 8 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;cchoi&quot;,&quot;text&quot;:&quot;Damage : 33&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;dk0er&quot;,&quot;text&quot;:&quot;Extra Effect: Tossing effect for 0.5 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;6jd7c&quot;,&quot;text&quot;:&quot;Effect Limit: -Rock Pieces&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;9j2m0&quot;,&quot;text&quot;:&quot;Damage : 10&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:1,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;b4alp&quot;,&quot;text&quot;:&quot;Extra Effect: -&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:1,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;e2gcd&quot;,&quot;text&quot;:&quot;Effect Limit: 1 Player&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:1,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;6au7p&quot;,&quot;text&quot;:&quot;https://youtu.be/jgrtmeqK3Z4&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:28,&quot;key&quot;:3}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;45dlq&quot;,&quot;text&quot;:&quot;- Untouchable&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;1ihts&quot;,&quot;text&quot;:&quot;Cooldown : 12 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;983b&quot;,&quot;text&quot;:&quot;Damage : -&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;7k3vq&quot;,&quot;text&quot;:&quot;Extra Effect: Immune everything for 2 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;2hpbs&quot;,&quot;text&quot;:&quot;https://youtu.be/6rOO3Ao_2fA&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:28,&quot;key&quot;:4}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;2rssg&quot;,&quot;text&quot;:&quot;Fire&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;nlu1&quot;,&quot;text&quot;:&quot;- Fire Ball&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;draoj&quot;,&quot;text&quot;:&quot;Cooldown : 3 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;cp5tp&quot;,&quot;text&quot;:&quot;Damage : 30&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;9e2vs&quot;,&quot;text&quot;:&quot;Extra Effect: -&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;busib&quot;,&quot;text&quot;:&quot;Range : 8&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;18p00&quot;,&quot;text&quot;:&quot;Effect Limit: 3 Player&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;bgue4&quot;,&quot;text&quot;:&quot;https://youtu.be/7rwlL0j3iaE&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:28,&quot;key&quot;:5}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;c9l80&quot;,&quot;text&quot;:&quot;- Dragon Breath&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;42ag&quot;,&quot;text&quot;:&quot;Cooldown : 12 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;87l9f&quot;,&quot;text&quot;:&quot;Damage : each 0.25 seconds applies 6 damage for maximum 4 player in area&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;45uac&quot;,&quot;text&quot;:&quot;Extra Effect: Applies \&quot;Silence\&quot; effect for every players in area&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;3ug8b&quot;,&quot;text&quot;:&quot;https://youtu.be/t1Hmsync1uc&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:28,&quot;key&quot;:6}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;bulbb&quot;,&quot;text&quot;:&quot;- Demon Hall&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;8vi11&quot;,&quot;text&quot;:&quot;Cooldown : 13 seconds&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;1fc8t&quot;,&quot;text&quot;:&quot;Fire Circle - Damage : 18 - Extra Effect: - - Effect Limit: 5&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;a3aju&quot;,&quot;text&quot;:&quot;Hall - Damage : Each 1 seconds applies 4 damage for maximum 5 player in area&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;be0it&quot;,&quot;text&quot;:&quot;Extra Effect: Applies \&quot;Heal Prohibition\&quot; effect for every player in area&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;fdhd9&quot;,&quot;text&quot;:&quot;https://youtu.be/VviSXnWuiN0&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:28,&quot;key&quot;:7}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;ocqs&quot;,&quot;text&quot;:&quot;- Torch&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;24lnl&quot;,&quot;text&quot;:&quot;Cooldown : 13 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;brkg3&quot;,&quot;text&quot;:&quot;Damage : -&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;aj0j7&quot;,&quot;text&quot;:&quot;Extra Effect: Increase attack %20&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;2ro7h&quot;,&quot;text&quot;:&quot;https://youtu.be/_o7iuziJtr4&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:28,&quot;key&quot;:8}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;9c0su&quot;,&quot;text&quot;:&quot;Water&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;99rbm&quot;,&quot;text&quot;:&quot;- Needles&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;7flui&quot;,&quot;text&quot;:&quot;Cooldown : 3 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;3jdnh&quot;,&quot;text&quot;:&quot;Each Needle&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:11,&quot;style&quot;:&quot;BOLD&quot;}],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;2715i&quot;,&quot;text&quot;:&quot;Damage : 20&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:1,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;14jvf&quot;,&quot;text&quot;:&quot;Extra Effect: Slow %20&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:1,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;ki5u&quot;,&quot;text&quot;:&quot;Effect Limit: 1 Player&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:1,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;fd617&quot;,&quot;text&quot;:&quot;https://youtu.be/x2pGI4eKWYo&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:28,&quot;key&quot;:9}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;ts65&quot;,&quot;text&quot;:&quot;- Frozen Road&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;3socn&quot;,&quot;text&quot;:&quot;Cooldown : 10 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;6uvl4&quot;,&quot;text&quot;:&quot;Damage : 15&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;8gfdl&quot;,&quot;text&quot;:&quot;Extra Effects: Slow %60 After 2 seconds applies \&quot;Move Prohibition\&quot; effect for players in area&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;f1qi&quot;,&quot;text&quot;:&quot;Effect Limit: 4 Player&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;cb84l&quot;,&quot;text&quot;:&quot;https://youtu.be/1VixwgBviqs&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:28,&quot;key&quot;:10}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;9hfb4&quot;,&quot;text&quot;:&quot;- Needle Rain&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;2jfsk&quot;,&quot;text&quot;:&quot;Cooldown : 8 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;4v6vh&quot;,&quot;text&quot;:&quot;Damage : 35&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;9j911&quot;,&quot;text&quot;:&quot;Extra Effect: -&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;4p18g&quot;,&quot;text&quot;:&quot;Effect Limit: 4&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;5kr6i&quot;,&quot;text&quot;:&quot;https://youtu.be/DGDXee698_c&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:28,&quot;key&quot;:11}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;3v7ui&quot;,&quot;text&quot;:&quot;- Healing Water&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;ambp3&quot;,&quot;text&quot;:&quot;Cooldown : 15 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;64old&quot;,&quot;text&quot;:&quot;Damage : -&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;3bmt9&quot;,&quot;text&quot;:&quot;Extra Effects: For 5 seconds, player heal %2 for each 1 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;4kprg&quot;,&quot;text&quot;:&quot;https://youtu.be/NI51YTMOWqs&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:28,&quot;key&quot;:12}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;d4d83&quot;,&quot;text&quot;:&quot;Wind&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;e1rdc&quot;,&quot;text&quot;:&quot;- Razor Wave&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;3vjee&quot;,&quot;text&quot;:&quot;Cooldown : 3 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;24q4m&quot;,&quot;text&quot;:&quot;Damage : 20&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;45j2k&quot;,&quot;text&quot;:&quot;Extra Effect: -&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;dsva7&quot;,&quot;text&quot;:&quot;https://youtu.be/-75CjLw0K8U&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:28,&quot;key&quot;:13}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;9kdj3&quot;,&quot;text&quot;:&quot;- Tornado&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;9gore&quot;,&quot;text&quot;:&quot;Cooldown : 12 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;arrv8&quot;,&quot;text&quot;:&quot;Damage : Each 0.75 seconds applies 4 damage&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;6kddg&quot;,&quot;text&quot;:&quot;Extra Effect: Pulls players in.&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;8ihfm&quot;,&quot;text&quot;:&quot;https://youtu.be/Vd015l34JBI&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:28,&quot;key&quot;:14}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;bjds8&quot;,&quot;text&quot;:&quot;- Serial Waves&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;bjqtu&quot;,&quot;text&quot;:&quot;Cooldown : 10 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;4spqg&quot;,&quot;text&quot;:&quot;Damage :&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;esoue&quot;,&quot;text&quot;:&quot;First Two Wave: 15&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:1,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;60t98&quot;,&quot;text&quot;:&quot;Last Wave: 20&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:1,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;5nth0&quot;,&quot;text&quot;:&quot;Extra Effects : - Effect Limit: Each wave has 3 player limit.&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;1m8ll&quot;,&quot;text&quot;:&quot;https://youtu.be/bortFpOxkl0&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:28,&quot;key&quot;:15}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;3snlu&quot;,&quot;text&quot;:&quot;- Push&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;7nhvv&quot;,&quot;text&quot;:&quot;Cooldown : 12 seconds&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;5306l&quot;,&quot;text&quot;:&quot;Damage : 10&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;f4vq5&quot;,&quot;text&quot;:&quot;Extra Effects: Applies tossing effect&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;8a5ad&quot;,&quot;text&quot;:&quot;https://youtu.be/nOJpT59fsu0&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[{&quot;offset&quot;:0,&quot;length&quot;:28,&quot;key&quot;:16}],&quot;data&quot;:{}},{&quot;key&quot;:&quot;cfg7n&quot;,&quot;text&quot;:&quot;Equipments&quot;,&quot;type&quot;:&quot;header-two&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;5q4st&quot;,&quot;text&quot;:&quot;Wizards can equip an armor and a weapon from a selection of unique items&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;7skkp&quot;,&quot;text&quot;:&quot;There are 6 levels to equipments which can be differentiated by color:&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;efmha&quot;,&quot;text&quot;:&quot;(MIN) White -&gt; Green -&gt; Blue -&gt; Yellow -&gt; Purple -&gt; Orange (MAX)&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:1,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;cil7n&quot;,&quot;text&quot;:&quot;Each equipment in all levels have 6 typeswith unique effects&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;1106i&quot;,&quot;text&quot;:&quot;Higher level equipments have more effects embedded in them&quot;,&quot;type&quot;:&quot;unordered-list-item&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;fruqu&quot;,&quot;text&quot;:&quot;Weapon Lv:&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:0,&quot;rowIndex&quot;:0}},{&quot;key&quot;:&quot;7bdeo&quot;,&quot;text&quot;:&quot;White &amp; Green&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:1,&quot;rowIndex&quot;:0}},{&quot;key&quot;:&quot;7dcqs&quot;,&quot;text&quot;:&quot;Blue &amp; Yellow&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:2,&quot;rowIndex&quot;:0}},{&quot;key&quot;:&quot;csqsi&quot;,&quot;text&quot;:&quot;Purple &amp; Orange&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:3,&quot;rowIndex&quot;:0}},{&quot;key&quot;:&quot;1o8pr&quot;,&quot;text&quot;:&quot;Cooldown Reducer:&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:0,&quot;rowIndex&quot;:1}},{&quot;key&quot;:&quot;c1jr7&quot;,&quot;text&quot;:&quot;Cooldown&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:1,&quot;rowIndex&quot;:1}},{&quot;key&quot;:&quot;4dvat&quot;,&quot;text&quot;:&quot;Stun&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:2,&quot;rowIndex&quot;:1}},{&quot;key&quot;:&quot;549tk&quot;,&quot;text&quot;:&quot;Attack&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:3,&quot;rowIndex&quot;:1}},{&quot;key&quot;:&quot;3cpgt&quot;,&quot;text&quot;:&quot;Critical Damage Dealer:&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:0,&quot;rowIndex&quot;:2}},{&quot;key&quot;:&quot;2i1i5&quot;,&quot;text&quot;:&quot;Critical Chance&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:1,&quot;rowIndex&quot;:2}},{&quot;key&quot;:&quot;egb47&quot;,&quot;text&quot;:&quot;Critical Damage&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:2,&quot;rowIndex&quot;:2}},{&quot;key&quot;:&quot;fjagf&quot;,&quot;text&quot;:&quot;Damage (to low health)&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:3,&quot;rowIndex&quot;:2}},{&quot;key&quot;:&quot;47mfv&quot;,&quot;text&quot;:&quot;Armor Penetration:&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:0,&quot;rowIndex&quot;:3}},{&quot;key&quot;:&quot;8bm64&quot;,&quot;text&quot;:&quot;Armor Penetration&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:1,&quot;rowIndex&quot;:3}},{&quot;key&quot;:&quot;20c1e&quot;,&quot;text&quot;:&quot;Slow&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:2,&quot;rowIndex&quot;:3}},{&quot;key&quot;:&quot;6mcs5&quot;,&quot;text&quot;:&quot;Defense Reduce&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:3,&quot;rowIndex&quot;:3}},{&quot;key&quot;:&quot;8raop&quot;,&quot;text&quot;:&quot;Health Stealer:&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:0,&quot;rowIndex&quot;:4}},{&quot;key&quot;:&quot;408ol&quot;,&quot;text&quot;:&quot;Health Steal&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:1,&quot;rowIndex&quot;:4}},{&quot;key&quot;:&quot;9ps7i&quot;,&quot;text&quot;:&quot;Attack(overtime)&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:2,&quot;rowIndex&quot;:4}},{&quot;key&quot;:&quot;c9m46&quot;,&quot;text&quot;:&quot;Healing (on kill)&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:3,&quot;rowIndex&quot;:4}},{&quot;key&quot;:&quot;2jvra&quot;,&quot;text&quot;:&quot;Poisoner:&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:0,&quot;rowIndex&quot;:5}},{&quot;key&quot;:&quot;1jlni&quot;,&quot;text&quot;:&quot;Poison&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:1,&quot;rowIndex&quot;:5}},{&quot;key&quot;:&quot;l5eu&quot;,&quot;text&quot;:&quot;Burn&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:2,&quot;rowIndex&quot;:5}},{&quot;key&quot;:&quot;tlqj&quot;,&quot;text&quot;:&quot;Reduced Healing (on foe)&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:3,&quot;rowIndex&quot;:5}},{&quot;key&quot;:&quot;1oct5&quot;,&quot;text&quot;:&quot;True Damage Dealer:&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:0,&quot;rowIndex&quot;:6}},{&quot;key&quot;:&quot;fjegj&quot;,&quot;text&quot;:&quot;True Damage&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:1,&quot;rowIndex&quot;:6}},{&quot;key&quot;:&quot;1f6rj&quot;,&quot;text&quot;:&quot;Cooldown (on kill)&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:2,&quot;rowIndex&quot;:6}},{&quot;key&quot;:&quot;33smk&quot;,&quot;text&quot;:&quot;Percent Damage&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:4,&quot;colIndex&quot;:3,&quot;rowIndex&quot;:6}},{&quot;key&quot;:&quot;672h0&quot;,&quot;text&quot;:&quot;&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;cm0uu&quot;,&quot;text&quot;:&quot;&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}},{&quot;key&quot;:&quot;n5ig&quot;,&quot;text&quot;:&quot;Armor Lv:&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:0,&quot;rowIndex&quot;:0}},{&quot;key&quot;:&quot;3ejur&quot;,&quot;text&quot;:&quot;White &amp; Green &amp; Blue&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:1,&quot;rowIndex&quot;:0}},{&quot;key&quot;:&quot;80pst&quot;,&quot;text&quot;:&quot;Yellow &amp; Purple &amp; Orange&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:2,&quot;rowIndex&quot;:0}},{&quot;key&quot;:&quot;cote&quot;,&quot;text&quot;:&quot;Critical Damage Reducer:&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:0,&quot;rowIndex&quot;:1}},{&quot;key&quot;:&quot;10nln&quot;,&quot;text&quot;:&quot;Reduced Criticial Damage&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:1,&quot;rowIndex&quot;:1}},{&quot;key&quot;:&quot;7odsf&quot;,&quot;text&quot;:&quot;Defense&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:2,&quot;rowIndex&quot;:1}},{&quot;key&quot;:&quot;21r69&quot;,&quot;text&quot;:&quot;Dodger:&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:0,&quot;rowIndex&quot;:2}},{&quot;key&quot;:&quot;1bg9o&quot;,&quot;text&quot;:&quot;Dodge&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:1,&quot;rowIndex&quot;:2}},{&quot;key&quot;:&quot;1jbic&quot;,&quot;text&quot;:&quot;Slow (on foe)&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:2,&quot;rowIndex&quot;:2}},{&quot;key&quot;:&quot;7tbb3&quot;,&quot;text&quot;:&quot;Heal Improver:&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:0,&quot;rowIndex&quot;:3}},{&quot;key&quot;:&quot;fk4to&quot;,&quot;text&quot;:&quot;Healing&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:1,&quot;rowIndex&quot;:3}},{&quot;key&quot;:&quot;bqqep&quot;,&quot;text&quot;:&quot;Defense (overtime)&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:2,&quot;rowIndex&quot;:3}},{&quot;key&quot;:&quot;3u724&quot;,&quot;text&quot;:&quot;Health Regener:&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:0,&quot;rowIndex&quot;:4}},{&quot;key&quot;:&quot;eng4f&quot;,&quot;text&quot;:&quot;Health Regenaration&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:1,&quot;rowIndex&quot;:4}},{&quot;key&quot;:&quot;ct7vd&quot;,&quot;text&quot;:&quot;Health (overtime)&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:2,&quot;rowIndex&quot;:4}},{&quot;key&quot;:&quot;29ol&quot;,&quot;text&quot;:&quot;Damage Reflector (Amount):&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:0,&quot;rowIndex&quot;:5}},{&quot;key&quot;:&quot;fsee4&quot;,&quot;text&quot;:&quot;Reflect Damage (by amount)&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:1,&quot;rowIndex&quot;:5}},{&quot;key&quot;:&quot;8ir88&quot;,&quot;text&quot;:&quot;Reduce Health&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:2,&quot;rowIndex&quot;:5}},{&quot;key&quot;:&quot;7nkpb&quot;,&quot;text&quot;:&quot;Damage Reflector (Chance):&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:0,&quot;rowIndex&quot;:6}},{&quot;key&quot;:&quot;54dn9&quot;,&quot;text&quot;:&quot;Reflect Damage (channce)&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:1,&quot;rowIndex&quot;:6}},{&quot;key&quot;:&quot;66bg&quot;,&quot;text&quot;:&quot;Health Restore (when low)&quot;,&quot;type&quot;:&quot;table-cell&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{&quot;alignment&quot;:&quot;L&quot;,&quot;colCount&quot;:3,&quot;colIndex&quot;:2,&quot;rowIndex&quot;:6}},{&quot;key&quot;:&quot;2qnbv&quot;,&quot;text&quot;:&quot;&quot;,&quot;type&quot;:&quot;unstyled&quot;,&quot;depth&quot;:0,&quot;inlineStyleRanges&quot;:[],&quot;entityRanges&quot;:[],&quot;data&quot;:{}}]}">
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="a7e951_initial-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="a7e951_initial-0-0"><span data-offset-key="a7e951_initial-0-0">Hi everybody I&rsquo;m Tarık. I am an indie game developer and I am the sole creator of </span><span data-offset-key="a7e951_initial-0-1">Elementalist</span><span data-offset-key="a7e951_initial-0-2">. I've been working on this game for 7 months and I'd like to talk a bit about the current state:</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="1cpn9-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="1cpn9-0-0"><span data-offset-key="1cpn9-0-0">Elementalist is an IO game based on RPG. The main character is a wizard who can use 4 types of elements, namely Earth, Fire, Water and Wind. There are various game modes with different challenges and rewards. You can collect trade materials throughout the game modes and spend them in the shop to get new skins which boost your strength in the battlefield.</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="dhbav-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="dhbav-0-0"><span data-offset-key="dhbav-0-0">&nbsp;</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="aep6e-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="aep6e-0-0"><span data-offset-key="aep6e-0-0">Google Play Link: </span><a class="s18magzr-0 lDmhO" href="https://play.google.com/store/apps/details?id=com.twoHandedGames.Elementalist.io&amp;hl=en"><span data-offset-key="aep6e-1-0">https://play.google.com/store/apps/details?id=com.twoHandedGames.Elementalist.io&amp;hl=en</span></a></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="1trsi-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="1trsi-0-0"><span data-offset-key="1trsi-0-0">&nbsp;</span></div>
+  </div>
+  <div class="s1r77xgy-0 jrBPrI">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="ro76-0-0"><span data-offset-key="ro76-0-0">Game Mechanics</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="b0fv2-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="b0fv2-0-0"><span data-offset-key="b0fv2-0-0">There are two types of leveling system in the battlefield; the "Character Level" and the "Element Level":</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="5sut9-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5sut9-0-0"><span data-offset-key="5sut9-0-0">-&gt; "Character Level" increases either by killing your enemeies or collecting random element pieces on the map</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="csnki-0-0"><span data-offset-key="csnki-0-0">You get higher attack, defense, speed and healing stats</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="9hhq4-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="9hhq4-0-0"><span data-offset-key="9hhq4-0-0">-&gt; "Element Level" increases as you gather the elemenet pieces of your wizard type (i.e. Fire wizard &lt;-&gt; Fire Element)</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="78fc5-0-0"><span data-offset-key="78fc5-0-0">You get a specific stat increase based on the element type:</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="853oi-0-0"><span data-offset-key="853oi-0-0">Earth -&gt; Increased Defense,</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="3b43t-0-0"><span data-offset-key="3b43t-0-0">Fire -&gt; Increased Attack,</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5puon-0-0"><span data-offset-key="5puon-0-0">Water -&gt; Increased Healing,</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="4qlc2-0-0"><span data-offset-key="4qlc2-0-0">Wind -&gt; Increased Speed</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="3dqvc-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="3dqvc-0-0"><span data-offset-key="3dqvc-0-0">-&gt; Each wizard has 4 unique abilities and a 5th ability which is a dash.</span></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5699k-0-0"><span data-offset-key="5699k-0-0">Game Modes</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="8re3g-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="8re3g-0-0"><span data-offset-key="8re3g-0-0">Currently there are 5 main modes in the game but the framework I used allows me to create new modes easily so I will add new modes as the time goes. Let&rsquo;s talk about exists modes:</span></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="4p9cm-0-0"><span data-offset-key="4p9cm-0-0">IO</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="as1v3-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="as1v3-0-0"><span data-offset-key="as1v3-0-0">Description:</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="en592-0-0"><span data-offset-key="en592-0-0">The main goal is to finish the game in higher rankings to earn more gold.</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="1q4dm-0-0"><span data-offset-key="1q4dm-0-0">Your score increases based on how many pieces you collected and how many enemies you killed</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="9dgt5-0-0"><span data-offset-key="9dgt5-0-0">Your score is reset on death</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="e42b7-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="e42b7-0-0"><span data-offset-key="e42b7-0-0">Setting:</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="ep6om-0-0"><span data-offset-key="ep6om-0-0">Teams : Single</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="1gloh-0-0"><span data-offset-key="1gloh-0-0">Players : 10 players</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="agoq4-0-0"><span data-offset-key="agoq4-0-0">Type : PvP</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="e9eip-0-0"><span data-offset-key="e9eip-0-0">Reward : Gold</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5tc6k-0-0"><span data-offset-key="5tc6k-0-0">Duration: 150 seconds</span></div>
+    </li>
+  </ul>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="12fjg-0-0"><span data-offset-key="12fjg-0-0">Mining</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="cghen-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="cghen-0-0"><span data-offset-key="cghen-0-0">Description:</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5743c-0-0"><span data-offset-key="5743c-0-0">Part1 : Mining: the first 100 seconds of the game, everyone is immune to damage</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="2jhgd-0-0"><span data-offset-key="2jhgd-0-0">There are lodes located in the map, when destroyed, they scatter color essences</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5b5c-0-0"><span data-offset-key="5b5c-0-0">Part2 : Battle: the last 100 seconds of the game, everyone is vulnerable to damage</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="9614s-0-0"><span data-offset-key="9614s-0-0">You lose all the essences you collected on death</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="8v5si-0-0"><span data-offset-key="8v5si-0-0">You only win what's left in your inventory when the game ends</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="act9n-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="act9n-0-0"><span data-offset-key="act9n-0-0">Setting:</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="sg58-0-0"><span data-offset-key="sg58-0-0">Teams : Single</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="29f1q-0-0"><span data-offset-key="29f1q-0-0">Players : 7 players</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="4jqn2-0-0"><span data-offset-key="4jqn2-0-0">Type : PvE -&gt; PvP</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5lc3a-0-0"><span data-offset-key="5lc3a-0-0">Reward : Color Esssence</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="8d8me-0-0"><span data-offset-key="8d8me-0-0">Duration: 200 seconds</span></div>
+    </li>
+  </ul>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="e9ha0-0-0"><span data-offset-key="e9ha0-0-0">IOHR (Invasion of Hybrid Rebels)</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="cudk0-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="cudk0-0-0"><span data-offset-key="cudk0-0-0">Description:</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="972sf-0-0"><span data-offset-key="972sf-0-0">The team of 5 players fights againts the Hybrid Rebel Army to defeat all the enemies</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="6mlgl-0-0"><span data-offset-key="6mlgl-0-0">Hybrid Rebels can drop war loot when killed</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="6ftm5-0-0"><span data-offset-key="6ftm5-0-0">On death, you spawn from healing fountain which can only respawn one player at a time</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5fipc-0-0"><span data-offset-key="5fipc-0-0">The healing fountain has to recover its strength in order to resurrect a player</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5us92-0-0"><span data-offset-key="5us92-0-0">Game is over when all players are dead</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="c07k1-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="c07k1-0-0"><span data-offset-key="c07k1-0-0">Setting</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="bm0pd-0-0"><span data-offset-key="bm0pd-0-0">Teams : 5 players</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="3sa50-0-0"><span data-offset-key="3sa50-0-0">Players : 5 players</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="3m4ic-0-0"><span data-offset-key="3m4ic-0-0">Type : PvE -&gt; Team vs the Hybrid Rebel Army</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="tvct-0-0"><span data-offset-key="tvct-0-0">Reward : War Loot</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="93t2m-0-0"><span data-offset-key="93t2m-0-0">Duration: 250 seconds</span></div>
+    </li>
+  </ul>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="ar40s-0-0"><span data-offset-key="ar40s-0-0">Arena</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="an35p-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="an35p-0-0"><span data-offset-key="an35p-0-0">Description:</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="4jei2-0-0"><span data-offset-key="4jei2-0-0">All players fight against each other until only one remainds on the ground</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="1lvbr-0-0"><span data-offset-key="1lvbr-0-0">The sole remainer wins the arena cup</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="22rqo-0-0"><span data-offset-key="22rqo-0-0">You cannot respawn on death</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="bjr1l-0-0"><span data-offset-key="bjr1l-0-0">As the time passes, the walls around the arena narrows down</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="74eei-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="74eei-0-0"><span data-offset-key="74eei-0-0">Setting</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="22sdr-0-0"><span data-offset-key="22sdr-0-0">Teams : Single</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="sb2m-0-0"><span data-offset-key="sb2m-0-0">Players : 16 players</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="3g6tp-0-0"><span data-offset-key="3g6tp-0-0">Type : PvP</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="7cc84-0-0"><span data-offset-key="7cc84-0-0">Reward : Arena Cup</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="72oat-0-0"><span data-offset-key="72oat-0-0">Duration: 180 seconds</span></div>
+    </li>
+  </ul>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="dokuh-0-0"><span data-offset-key="dokuh-0-0">Boss</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="biqh0-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="biqh0-0-0"><span data-offset-key="biqh0-0-0">Description:</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="94p27-0-0"><span data-offset-key="94p27-0-0">The team of 5 players fights againts the Rebel Boss to defeat him</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5tkdn-0-0"><span data-offset-key="5tkdn-0-0">The Rebel Boss spawns soldiers using his skill</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="dod6j-0-0"><span data-offset-key="dod6j-0-0">Each player has 3 lifes to respawn.</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="bbg7a-0-0"><span data-offset-key="bbg7a-0-0">You cannot level up unless you defeat the boss further advance in the game</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="eh5qa-0-0"><span data-offset-key="eh5qa-0-0">There is a boss for every 5th level and in order to advance, you need to defeat the boss</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="a2pna-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="a2pna-0-0"><span data-offset-key="a2pna-0-0">Setting</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="1lqjr-0-0"><span data-offset-key="1lqjr-0-0">Teams : 5 players</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="alo61-0-0"><span data-offset-key="alo61-0-0">Players : 5 players</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="b92rb-0-0"><span data-offset-key="b92rb-0-0">Type : PvE -&gt; Team vs the Rebel Boss</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="4vlnu-0-0"><span data-offset-key="4vlnu-0-0">Reward : Boss Chest &amp; Level-Up permission</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="m7mo-0-0"><span data-offset-key="m7mo-0-0">Duration: 180 seconds</span></div>
+    </li>
+  </ul>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5p6pb-0-0"><span data-offset-key="5p6pb-0-0">Skills</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="6ocok-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="6ocok-0-0"><span data-offset-key="6ocok-0-0">Currently there are 4 unique skills for each elementalist and a 5th dash skill for every element -&gt; In the future, the skill book -not yet implemented- will allow elementalists to learn new abilities</span></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="2c81o-0-0"><span data-offset-key="2c81o-0-0">Earth</span></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="bvgl9-0-0"><span data-offset-key="bvgl9-0-0">- Nail</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="26r98-0-0"><span data-offset-key="26r98-0-0">Cooldown : 3 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="dds1g-0-0"><span data-offset-key="dds1g-0-0">Damage : 21</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="597go-0-0"><span data-offset-key="597go-0-0">Extra Effect: Reduce defense %15 for 5 seconds - tossing effect for 0.2 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="79k7b-0-0"><span data-offset-key="79k7b-0-0">Effect Limit: 2 Player</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="3lk29-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="3lk29-0-0"><a class="s18magzr-0 lDmhO" href="https://youtu.be/g7g5EOZ1bes"><span data-offset-key="3lk29-0-0">https://youtu.be/g7g5EOZ1bes</span></a></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="539g-0-0"><span data-offset-key="539g-0-0">- Walls</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="d06dl-0-0"><span data-offset-key="d06dl-0-0">Cooldown : 10 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="3trde-0-0"><span data-offset-key="3trde-0-0">Damage : 20</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="9jq9p-0-0"><span data-offset-key="9jq9p-0-0">Extra Effect: Stun for 1.5 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="6qdvb-0-0"><span data-offset-key="6qdvb-0-0">Effect Limit: 4 Player</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="ai3c4-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="ai3c4-0-0"><a class="s18magzr-0 lDmhO" href="https://youtu.be/W_HrCqnIa-I"><span data-offset-key="ai3c4-0-0">https://youtu.be/W_HrCqnIa-I</span></a></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="90fgc-0-0"><span data-offset-key="90fgc-0-0">- Rock</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="8mfm4-0-0"><span data-offset-key="8mfm4-0-0">Cooldown : 8 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="541ij-0-0"><span data-offset-key="541ij-0-0">Damage : 33</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="16sc8-0-0"><span data-offset-key="16sc8-0-0">Extra Effect: Tossing effect for 0.5 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="dibj0-0-0"><span data-offset-key="dibj0-0-0">Effect Limit: -Rock Pieces</span></div>
+      <ul>
+        <li>
+          <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="c9kjj-0-0"><span data-offset-key="c9kjj-0-0">Damage : 10</span></div>
+        </li>
+        <li>
+          <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="felah-0-0"><span data-offset-key="felah-0-0">Extra Effect: -</span></div>
+        </li>
+        <li>
+          <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="fvjde-0-0"><span data-offset-key="fvjde-0-0">Effect Limit: 1 Player</span></div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="94koo-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="94koo-0-0"><a class="s18magzr-0 lDmhO" href="https://youtu.be/jgrtmeqK3Z4"><span data-offset-key="94koo-0-0">https://youtu.be/jgrtmeqK3Z4</span></a></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="3cs04-0-0"><span data-offset-key="3cs04-0-0">- Untouchable</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="93ogp-0-0"><span data-offset-key="93ogp-0-0">Cooldown : 12 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="a4bo5-0-0"><span data-offset-key="a4bo5-0-0">Damage : -</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="ccetc-0-0"><span data-offset-key="ccetc-0-0">Extra Effect: Immune everything for 2 seconds</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="6gdg2-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="6gdg2-0-0"><a class="s18magzr-0 lDmhO" href="https://youtu.be/6rOO3Ao_2fA"><span data-offset-key="6gdg2-0-0">https://youtu.be/6rOO3Ao_2fA</span></a></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="988a1-0-0"><span data-offset-key="988a1-0-0">Fire</span></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="6a8su-0-0"><span data-offset-key="6a8su-0-0">- Fire Ball</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5v4n4-0-0"><span data-offset-key="5v4n4-0-0">Cooldown : 3 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="233el-0-0"><span data-offset-key="233el-0-0">Damage : 30</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="e99k4-0-0"><span data-offset-key="e99k4-0-0">Extra Effect: -</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="a57uf-0-0"><span data-offset-key="a57uf-0-0">Range : 8</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="bvp29-0-0"><span data-offset-key="bvp29-0-0">Effect Limit: 3 Player</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="1g4cm-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="1g4cm-0-0"><a class="s18magzr-0 lDmhO" href="https://youtu.be/7rwlL0j3iaE"><span data-offset-key="1g4cm-0-0">https://youtu.be/7rwlL0j3iaE</span></a></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="b4i3q-0-0"><span data-offset-key="b4i3q-0-0">- Dragon Breath</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="a2533-0-0"><span data-offset-key="a2533-0-0">Cooldown : 12 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="1dk5c-0-0"><span data-offset-key="1dk5c-0-0">Damage : each 0.25 seconds applies 6 damage for maximum 4 player in area</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="e5u62-0-0"><span data-offset-key="e5u62-0-0">Extra Effect: Applies "Silence" effect for every players in area</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="1or53-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="1or53-0-0"><a class="s18magzr-0 lDmhO" href="https://youtu.be/t1Hmsync1uc"><span data-offset-key="1or53-0-0">https://youtu.be/t1Hmsync1uc</span></a></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="bv1t7-0-0"><span data-offset-key="bv1t7-0-0">- Demon Hall</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="65efr-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="65efr-0-0"><span data-offset-key="65efr-0-0">Cooldown : 13 seconds</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="fqroj-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="fqroj-0-0"><span data-offset-key="fqroj-0-0">Fire Circle - Damage : 18 - Extra Effect: - - Effect Limit: 5</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="b3tv9-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="b3tv9-0-0"><span data-offset-key="b3tv9-0-0">Hall - Damage : Each 1 seconds applies 4 damage for maximum 5 player in area</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="3h188-0-0"><span data-offset-key="3h188-0-0">Extra Effect: Applies "Heal Prohibition" effect for every player in area</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="928ih-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="928ih-0-0"><a class="s18magzr-0 lDmhO" href="https://youtu.be/VviSXnWuiN0"><span data-offset-key="928ih-0-0">https://youtu.be/VviSXnWuiN0</span></a></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="77dcn-0-0"><span data-offset-key="77dcn-0-0">- Torch</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="1p0kf-0-0"><span data-offset-key="1p0kf-0-0">Cooldown : 13 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="2875c-0-0"><span data-offset-key="2875c-0-0">Damage : -</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="2qboe-0-0"><span data-offset-key="2qboe-0-0">Extra Effect: Increase attack %20</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="7mmsm-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="7mmsm-0-0"><a class="s18magzr-0 lDmhO" href="https://youtu.be/_o7iuziJtr4"><span data-offset-key="7mmsm-0-0">https://youtu.be/_o7iuziJtr4</span></a></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5gobf-0-0"><span data-offset-key="5gobf-0-0">Water</span></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="ds0sp-0-0"><span data-offset-key="ds0sp-0-0">- Needles</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="eqllq-0-0"><span data-offset-key="eqllq-0-0">Cooldown : 3 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="2ss8u-0-0"><span data-offset-key="2ss8u-0-0">Each Needle</span></div>
+      <ul>
+        <li>
+          <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="1nec2-0-0"><span data-offset-key="1nec2-0-0">Damage : 20</span></div>
+        </li>
+        <li>
+          <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="f5uoi-0-0"><span data-offset-key="f5uoi-0-0">Extra Effect: Slow %20</span></div>
+        </li>
+        <li>
+          <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="co0t1-0-0"><span data-offset-key="co0t1-0-0">Effect Limit: 1 Player</span></div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="8eq3a-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="8eq3a-0-0"><a class="s18magzr-0 lDmhO" href="https://youtu.be/x2pGI4eKWYo"><span data-offset-key="8eq3a-0-0">https://youtu.be/x2pGI4eKWYo</span></a></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="9dc7b-0-0"><span data-offset-key="9dc7b-0-0">- Frozen Road</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="2ohnu-0-0"><span data-offset-key="2ohnu-0-0">Cooldown : 10 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="27fr3-0-0"><span data-offset-key="27fr3-0-0">Damage : 15</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="fuusj-0-0"><span data-offset-key="fuusj-0-0">Extra Effects: Slow %60 After 2 seconds applies "Move Prohibition" effect for players in area</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="mg7p-0-0"><span data-offset-key="mg7p-0-0">Effect Limit: 4 Player</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="37sg7-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="37sg7-0-0"><a class="s18magzr-0 lDmhO" href="https://youtu.be/1VixwgBviqs"><span data-offset-key="37sg7-0-0">https://youtu.be/1VixwgBviqs</span></a></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="aniev-0-0"><span data-offset-key="aniev-0-0">- Needle Rain</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="el1ro-0-0"><span data-offset-key="el1ro-0-0">Cooldown : 8 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="4ou4u-0-0"><span data-offset-key="4ou4u-0-0">Damage : 35</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="8fj4s-0-0"><span data-offset-key="8fj4s-0-0">Extra Effect: -</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="3g0o0-0-0"><span data-offset-key="3g0o0-0-0">Effect Limit: 4</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="fee9a-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="fee9a-0-0"><a class="s18magzr-0 lDmhO" href="https://youtu.be/DGDXee698_c"><span data-offset-key="fee9a-0-0">https://youtu.be/DGDXee698_c</span></a></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="8u2po-0-0"><span data-offset-key="8u2po-0-0">- Healing Water</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="3um6l-0-0"><span data-offset-key="3um6l-0-0">Cooldown : 15 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="cjfuk-0-0"><span data-offset-key="cjfuk-0-0">Damage : -</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="6d2ti-0-0"><span data-offset-key="6d2ti-0-0">Extra Effects: For 5 seconds, player heal %2 for each 1 seconds</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="9jnhc-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="9jnhc-0-0"><a class="s18magzr-0 lDmhO" href="https://youtu.be/NI51YTMOWqs"><span data-offset-key="9jnhc-0-0">https://youtu.be/NI51YTMOWqs</span></a></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="2en9v-0-0"><span data-offset-key="2en9v-0-0">Wind</span></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="bgks1-0-0"><span data-offset-key="bgks1-0-0">- Razor Wave</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="anvjo-0-0"><span data-offset-key="anvjo-0-0">Cooldown : 3 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="bnsuv-0-0"><span data-offset-key="bnsuv-0-0">Damage : 20</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="2a8kg-0-0"><span data-offset-key="2a8kg-0-0">Extra Effect: -</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="d1vda-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="d1vda-0-0"><a class="s18magzr-0 lDmhO" href="https://youtu.be/-75CjLw0K8U"><span data-offset-key="d1vda-0-0">https://youtu.be/-75CjLw0K8U</span></a></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5l5js-0-0"><span data-offset-key="5l5js-0-0">- Tornado</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5ro61-0-0"><span data-offset-key="5ro61-0-0">Cooldown : 12 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="65mce-0-0"><span data-offset-key="65mce-0-0">Damage : Each 0.75 seconds applies 4 damage</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5fflm-0-0"><span data-offset-key="5fflm-0-0">Extra Effect: Pulls players in.</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="8kp5o-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="8kp5o-0-0"><a class="s18magzr-0 lDmhO" href="https://youtu.be/Vd015l34JBI"><span data-offset-key="8kp5o-0-0">https://youtu.be/Vd015l34JBI</span></a></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="4qlge-0-0"><span data-offset-key="4qlge-0-0">- Serial Waves</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="961n9-0-0"><span data-offset-key="961n9-0-0">Cooldown : 10 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="2vi85-0-0"><span data-offset-key="2vi85-0-0">Damage :</span></div>
+      <ul>
+        <li>
+          <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5l3it-0-0"><span data-offset-key="5l3it-0-0">First Two Wave: 15</span></div>
+        </li>
+        <li>
+          <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="fnqm1-0-0"><span data-offset-key="fnqm1-0-0">Last Wave: 20</span></div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="elhp5-0-0"><span data-offset-key="elhp5-0-0">Extra Effects : - Effect Limit: Each wave has 3 player limit.</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="4qqg-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="4qqg-0-0"><a class="s18magzr-0 lDmhO" href="https://youtu.be/bortFpOxkl0"><span data-offset-key="4qqg-0-0">https://youtu.be/bortFpOxkl0</span></a></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="3ts21-0-0"><span data-offset-key="3ts21-0-0">- Push</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="28gok-0-0"><span data-offset-key="28gok-0-0">Cooldown : 12 seconds</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="d3cas-0-0"><span data-offset-key="d3cas-0-0">Damage : 10</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="8eltg-0-0"><span data-offset-key="8eltg-0-0">Extra Effects: Applies tossing effect</span></div>
+    </li>
+  </ul>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="aflg3-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="aflg3-0-0"><a class="s18magzr-0 lDmhO" href="https://youtu.be/nOJpT59fsu0"><span data-offset-key="aflg3-0-0">https://youtu.be/nOJpT59fsu0</span></a></div>
+  </div>
+  <div class="s1r77xgy-1 fNkLir">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="10ce9-0-0"><span data-offset-key="10ce9-0-0">Equipments</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="euq8b-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="euq8b-0-0"><span data-offset-key="euq8b-0-0">Wizards can equip an armor and a weapon from a selection of unique items</span></div>
+  </div>
+  <ul>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="4ainh-0-0"><span data-offset-key="4ainh-0-0">There are 6 levels to equipments which can be differentiated by color:</span></div>
+      <ul>
+        <li>
+          <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="99fgu-0-0"><span data-offset-key="99fgu-0-0">(MIN) White -&gt; Green -&gt; Blue -&gt; Yellow -&gt; Purple -&gt; Orange (MAX)</span></div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="ac0rv-0-0"><span data-offset-key="ac0rv-0-0">Each equipment in all levels have 6 typeswith unique effects</span></div>
+    </li>
+    <li>
+      <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="1tpp-0-0"><span data-offset-key="1tpp-0-0">Higher level equipments have more effects embedded in them</span></div>
+    </li>
+  </ul>
+  <table data-editor="a7e951">
+    <thead>
+      <tr>
+        <th align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="997cp-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="997cp-0-0"><span data-offset-key="997cp-0-0">Weapon Lv:</span></div>
+          </div>
+        </th>
+        <th align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="2bg5g-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="2bg5g-0-0"><span data-offset-key="2bg5g-0-0">White &amp; Green</span></div>
+          </div>
+        </th>
+        <th align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="280t2-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="280t2-0-0"><span data-offset-key="280t2-0-0">Blue &amp; Yellow</span></div>
+          </div>
+        </th>
+        <th align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="47q6e-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="47q6e-0-0"><span data-offset-key="47q6e-0-0">Purple &amp; Orange</span></div>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="e0tf3-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="e0tf3-0-0"><span data-offset-key="e0tf3-0-0">Cooldown Reducer:</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="b2qmr-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="b2qmr-0-0"><span data-offset-key="b2qmr-0-0">Cooldown</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="4fpmo-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="4fpmo-0-0"><span data-offset-key="4fpmo-0-0">Stun</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="30a52-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="30a52-0-0"><span data-offset-key="30a52-0-0">Attack</span></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="4ijta-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="4ijta-0-0"><span data-offset-key="4ijta-0-0">Critical Damage Dealer:</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="52vcm-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="52vcm-0-0"><span data-offset-key="52vcm-0-0">Critical Chance</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="9510v-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="9510v-0-0"><span data-offset-key="9510v-0-0">Critical Damage</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="dpn7j-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="dpn7j-0-0"><span data-offset-key="dpn7j-0-0">Damage (to low health)</span></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="5jgq4-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="5jgq4-0-0"><span data-offset-key="5jgq4-0-0">Armor Penetration:</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="br9de-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="br9de-0-0"><span data-offset-key="br9de-0-0">Armor Penetration</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="flgb8-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="flgb8-0-0"><span data-offset-key="flgb8-0-0">Slow</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="f5jd6-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="f5jd6-0-0"><span data-offset-key="f5jd6-0-0">Defense Reduce</span></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="6t2r2-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="6t2r2-0-0"><span data-offset-key="6t2r2-0-0">Health Stealer:</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="1on80-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="1on80-0-0"><span data-offset-key="1on80-0-0">Health Steal</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="89o9h-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="89o9h-0-0"><span data-offset-key="89o9h-0-0">Attack(overtime)</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="1jvd1-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="1jvd1-0-0"><span data-offset-key="1jvd1-0-0">Healing (on kill)</span></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="7pqm0-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="7pqm0-0-0"><span data-offset-key="7pqm0-0-0">Poisoner:</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="ddagb-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="ddagb-0-0"><span data-offset-key="ddagb-0-0">Poison</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="borvs-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="borvs-0-0"><span data-offset-key="borvs-0-0">Burn</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="7r32m-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="7r32m-0-0"><span data-offset-key="7r32m-0-0">Reduced Healing (on foe)</span></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="74qeg-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="74qeg-0-0"><span data-offset-key="74qeg-0-0">True Damage Dealer:</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="9gct4-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="9gct4-0-0"><span data-offset-key="9gct4-0-0">True Damage</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="7rfm2-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="7rfm2-0-0"><span data-offset-key="7rfm2-0-0">Cooldown (on kill)</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="f00sd-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="f00sd-0-0"><span data-offset-key="f00sd-0-0">Percent Damage</span></div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="8pd51-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="8pd51-0-0"><span data-offset-key="8pd51-0-0">&nbsp;</span></div>
+  </div>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="ap5in-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="ap5in-0-0"><span data-offset-key="ap5in-0-0">&nbsp;</span></div>
+  </div>
+  <table data-editor="a7e951">
+    <thead>
+      <tr>
+        <th align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="blol2-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="blol2-0-0"><span data-offset-key="blol2-0-0">Armor Lv:</span></div>
+          </div>
+        </th>
+        <th align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="989uo-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="989uo-0-0"><span data-offset-key="989uo-0-0">White &amp; Green &amp; Blue</span></div>
+          </div>
+        </th>
+        <th align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="2mfds-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="2mfds-0-0"><span data-offset-key="2mfds-0-0">Yellow &amp; Purple &amp; Orange</span></div>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="362cf-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="362cf-0-0"><span data-offset-key="362cf-0-0">Critical Damage Reducer:</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="2uu7s-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="2uu7s-0-0"><span data-offset-key="2uu7s-0-0">Reduced Criticial Damage</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="8is8p-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="8is8p-0-0"><span data-offset-key="8is8p-0-0">Defense</span></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="88n0b-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="88n0b-0-0"><span data-offset-key="88n0b-0-0">Dodger:</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="2hhvr-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="2hhvr-0-0"><span data-offset-key="2hhvr-0-0">Dodge</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="9sa07-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="9sa07-0-0"><span data-offset-key="9sa07-0-0">Slow (on foe)</span></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="ecrej-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="ecrej-0-0"><span data-offset-key="ecrej-0-0">Heal Improver:</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="dnkrn-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="dnkrn-0-0"><span data-offset-key="dnkrn-0-0">Healing</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="9v4d5-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="9v4d5-0-0"><span data-offset-key="9v4d5-0-0">Defense (overtime)</span></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="a42oe-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="a42oe-0-0"><span data-offset-key="a42oe-0-0">Health Regener:</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="b9n37-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="b9n37-0-0"><span data-offset-key="b9n37-0-0">Health Regenaration</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="qk07-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="qk07-0-0"><span data-offset-key="qk07-0-0">Health (overtime)</span></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="cr8sv-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="cr8sv-0-0"><span data-offset-key="cr8sv-0-0">Damage Reflector (Amount):</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="9a8qh-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="9a8qh-0-0"><span data-offset-key="9a8qh-0-0">Reflect Damage (by amount)</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="81onq-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="81onq-0-0"><span data-offset-key="81onq-0-0">Reduce Health</span></div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="26s2p-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="26s2p-0-0"><span data-offset-key="26s2p-0-0">Damage Reflector (Chance):</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="a558c-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="a558c-0-0"><span data-offset-key="a558c-0-0">Reflect Damage (channce)</span></div>
+          </div>
+        </td>
+        <td align="left">
+          <div class="" data-block="true" data-editor="a7e951" data-offset-key="8dgug-0-0">
+            <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="8dgug-0-0"><span data-offset-key="8dgug-0-0">Health Restore (when low)</span></div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="" data-block="true" data-editor="a7e951" data-offset-key="3a65t-0-0">
+    <div class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr" data-offset-key="3a65t-0-0">&nbsp;</div>
+  </div>
+</div>
