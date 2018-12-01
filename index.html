@@ -1,9 +1,305 @@
-<p>Hi everybody I&rsquo;m Tar&#305;k. I am an indie game developer and I am the sole creator of Elementalist. I've been working on this game for 7 months and I'd like to talk a bit about the current state: Elementalist is an IO game based on RPG. The main character is a wizard who can use 4 types of elements, namely Earth, Fire, Water and Wind. There are various game modes with different challenges and rewards. You can collect trade materials throughout the game modes and spend them in the shop to get new skins which boost your strength in the battlefield.</p>
+<p>Google Play Link: https://play.google.com/store/apps/details?id=com.twoHandedGames.Elementalist.io&amp;hl=en </p>
 
-<p>Google Play Link: https://play.google.com/store/apps/details?id=com.twoHandedGames.Elementalist.io&amp;hl=en</p>
+<p>Hi everybody I&rsquo;m Tar&#305;k. I am an indie game developer and I am the sole creator of Elementalist. I've been working on this game for 7 months and I'd like to talk a bit about the current state:</p>
 
-<p>Game Mechanics There are two types of leveling system in the battlefield; the &quot;Character Level&quot; and the &quot;Element Level&quot;: -> &quot;Character Level&quot; increases either by killing your enemeies or collecting random element pieces on the map - You get higher attack, defense, speed and healing stats -> &quot;Element Level&quot; increases as you gather the elemenet pieces of your wizard type (i.e. Fire wizard <-> Fire Element) - You get a specific stat increase based on the element type: - Earth -> Increased Defense, - Fire -> Increased Attack, - Water -> Increased Healing, - Wind -> Increased Speed -> Each wizard has 4 unique abilities and a 5th ability which is a dash. Game Modes Currently there are 5 main modes in the game but the framework I used allows me to create new modes easily so I will add new modes as the time goes. Let&rsquo;s talk about exists modes: IO Description: - The main goal is to finish the game in higher rankings to earn more gold. - Your score increases based on how many pieces you collected and how many enemies you killed - Your score is reset on death Setting: - Teams : Single - Players : 10 players - Type : PvP - Reward : Gold - Duration: 150 seconds Mining Description: - Part1 : Mining: the first 100 seconds of the game, everyone is immune to damage - There are lodes located in the map, when destroyed, they scatter color essences - Part2 : Battle: the last 100 seconds of the game, everyone is vulnerable to damage - You lose all the essences you collected on death - You only win what's left in your inventory when the game ends Setting: - Teams : Single - Players : 7 players - Type : PvE -> PvP - Reward : Color Esssence - Duration: 200 seconds IOHR (Invasion of Hybrid Rebels) Description: - The team of 5 players fights againts the Hybrid Rebel Army to defeat all the enemies - Hybrid Rebels can drop war loot when killed - On death, you spawn from healing fountain which can only respawn one player at a time - The healing fountain has to recover its strength in order to resurrect a player - Game is over when all players are dead Setting - Teams : 5 players - Players : 5 players - Type : PvE -> Team vs the Hybrid Rebel Army - Reward : War Loot - Duration: 250 seconds Arena Description: - All players fight against each other until only one remainds on the ground - The sole remainer wins the arena cup - You cannot respawn on death - As the time passes, the walls around the arena narrows down Setting - Teams : Single - Players : 16 players - Type : PvP - Reward : Arena Cup - Duration: 180 seconds Boss Description: - The team of 5 players fights againts the Rebel Boss to defeat him - The Rebel Boss spawns soldiers using his skill - Each player has 3 lifes to respawn. - You cannot level up unless you defeat the boss further advance in the game - There is a boss for every 5th level and in order to advance, you need to defeat the boss Setting - Teams : 5 players - Players : 5 players - Type : PvE -> Team vs the Rebel Boss - Reward : Boss Chest &amp; Level-Up permission - Duration: 180 seconds Skills Currently there are 4 unique skills for each elementalist and a 5th dash skill for every element -> In the future, the skill book -not yet implemented- will allow elementalists to learn new abilities Earth - Nail - Cooldown : 3 seconds - Damage : 21 - Extra Effect: Reduce defense %15 for 5 seconds - tossing effect for 0.2 seconds - Effect Limit: 2 Player https://youtu.be/g7g5EOZ1bes - Walls - Cooldown : 10 seconds - Damage : 20 - Extra Effect: Stun for 1.5 seconds - Effect Limit: 4 Player https://youtu.be/W_HrCqnIa-I - Rock - Cooldown : 8 seconds - Damage : 33 - Extra Effect: Tossing effect for 0.5 seconds - Effect Limit: -Rock Pieces  - Damage : 10  - Extra Effect: -  - Effect Limit: 1 Player https://youtu.be/jgrtmeqK3Z4 - Untouchable - Cooldown : 12 seconds - Damage : - - Extra Effect: Immune everything for 2 seconds https://youtu.be/6rOO3Ao_2fA Fire - Fire Ball - Cooldown : 3 seconds - Damage : 30 - Extra Effect: - - Range : 8 - Effect Limit: 3 Player https://youtu.be/7rwlL0j3iaE - Dragon Breath - Cooldown : 12 seconds - Damage : each 0.25 seconds applies 6 damage for maximum 4 player in area - Extra Effect: Applies &quot;Silence&quot; effect for every players in area https://youtu.be/t1Hmsync1uc - Demon Hall Cooldown : 13 seconds Fire Circle - Damage : 18 - Extra Effect: - - Effect Limit: 5 Hall - Damage : Each 1 seconds applies 4 damage for maximum 5 player in area - Extra Effect: Applies &quot;Heal Prohibition&quot; effect for every player in area https://youtu.be/VviSXnWuiN0 - Torch - Cooldown : 13 seconds - Damage : - - Extra Effect: Increase attack %20 https://youtu.be/_o7iuziJtr4 Water - Needles - Cooldown : 3 seconds - Each Needle  - Damage : 20  - Extra Effect: Slow %20  - Effect Limit: 1 Player https://youtu.be/x2pGI4eKWYo - Frozen Road - Cooldown : 10 seconds - Damage : 15 - Extra Effects: Slow %60 After 2 seconds applies &quot;Move Prohibition&quot; effect for players in area - Effect Limit: 4 Player https://youtu.be/1VixwgBviqs - Needle Rain - Cooldown : 8 seconds - Damage : 35 - Extra Effect: - - Effect Limit: 4 https://youtu.be/DGDXee698_c - Healing Water - Cooldown : 15 seconds - Damage : - - Extra Effects: For 5 seconds, player heal %2 for each 1 seconds https://youtu.be/NI51YTMOWqs Wind - Razor Wave - Cooldown : 3 seconds - Damage : 20 - Extra Effect: - https://youtu.be/-75CjLw0K8U - Tornado - Cooldown : 12 seconds - Damage : Each 0.75 seconds applies 4 damage - Extra Effect: Pulls players in. https://youtu.be/Vd015l34JBI - Serial Waves - Cooldown : 10 seconds - Damage :  - First Two Wave: 15  - Last Wave: 20 - Extra Effects : - Effect Limit: Each wave has 3 player limit. https://youtu.be/bortFpOxkl0 - Push - Cooldown : 12 seconds - Damage : 10 - Extra Effects: Applies tossing effect https://youtu.be/nOJpT59fsu0 Equipments Wizards can equip an armor and a weapon from a selection of unique items - There are 6 levels to equipments which can be differentiated by color:  - (MIN) White -> Green -> Blue -> Yellow -> Purple -> Orange (MAX) - Each equipment in all levels have 6 typeswith unique effects - Higher level equipments have more effects embedded in them Weapon Lv: White &amp; Green Blue &amp; Yellow Purple &amp; Orange Cooldown Reducer: Cooldown Stun Attack Critical Damage Dealer: Critical Chance Critical Damage Damage (to low health) Armor Penetration: Armor Penetration Slow Defense Reduce Health Stealer: Health Steal Attack(overtime) Healing (on kill) Poisoner: Poison Burn Reduced Healing (on foe) True Damage Dealer: True Damage Cooldown (on kill) Percent Damage</p>
+<p> </p>
 
-<p>Armor Lv: White &amp; Green &amp; Blue Yellow &amp; Purple &amp; Orange Critical Damage Reducer: Reduced Criticial Damage Defense Dodger: Dodge Slow (on foe) Heal Improver: Healing Defense (overtime) Health Regener: Health Regenaration Health (overtime) Damage Reflector (Amount): Reflect Damage (by amount) Reduce Health Damage Reflector (Chance): Reflect Damage (channce) Health Restore (when low)</p>
+<p>Elementalist is an IO game based on RPG. The main character is a wizard who can use 4 types of elements, namely Earth, Fire, Water and Wind. There are various game modes with different challenges and rewards. You can collect trade materials throughout the game modes and spend them in the shop to get new skins which boost your strength in the battlefield.</p>
 
-<p></p>
+<p> </p>
+
+<p>Game Mechanics<br />
+There are two types of leveling system in the battlefield; the &quot;Character Level&quot; and the &quot;Element Level&quot;:</p>
+
+<p>-> &quot;Character Level&quot; increases either by killing your enemeies or collecting random element pieces on the map</p>
+
+<p>You get higher attack, defense, speed and healing stats<br />
+-> &quot;Element Level&quot; increases as you gather the elemenet pieces of your wizard type (i.e. Fire wizard <-> Fire Element)</p>
+
+<p>You get a specific stat increase based on the element type:<br />
+Earth -> Increased Defense,<br />
+Fire -> Increased Attack,<br />
+Water -> Increased Healing,<br />
+Wind -> Increased Speed<br />
+ </p>
+
+<p>-> Each wizard has 4 unique abilities and a 5th ability which is a dash.</p>
+
+<p> </p>
+
+<p>Game Modes<br />
+Currently there are 5 main modes in the game but the framework I used allows me to create new modes easily so I will add new modes as the time goes. Let&rsquo;s talk about exists modes:</p>
+
+<p> </p>
+
+<p>IO<br />
+ </p>
+
+<p>Description:</p>
+
+<p>The main goal is to finish the game in higher rankings to earn more gold.</p>
+
+<p>Your score increases based on how many pieces you collected and how many enemies you killed</p>
+
+<p>Your score is reset on death</p>
+
+<p>Setting:</p>
+
+<p>Teams : Single<br />
+Players : 10 players<br />
+Type : PvP<br />
+Reward : Gold<br />
+Duration: 150 seconds<br />
+ </p>
+
+<p>Mining<br />
+ </p>
+
+<p>Description:</p>
+
+<p>Part1 : Mining: the first 100 seconds of the game, everyone is immune to damage<br />
+There are lodes located in the map, when destroyed, they scatter color essences<br />
+Part2 : Battle: the last 100 seconds of the game, everyone is vulnerable to damage<br />
+You lose all the essences you collected on death<br />
+You only win what's left in your inventory when the game ends<br />
+Setting:</p>
+
+<p>Teams : Single<br />
+Players : 7 players<br />
+Type : PvE -> PvP<br />
+Reward : Color Esssence<br />
+Duration: 200 seconds<br />
+ </p>
+
+<p>IOHR (Invasion of Hybrid Rebels)<br />
+ </p>
+
+<p>Description:</p>
+
+<p>The team of 5 players fights againts the Hybrid Rebel Army to defeat all the enemies<br />
+Hybrid Rebels can drop war loot when killed<br />
+On death, you spawn from healing fountain which can only respawn one player at a time<br />
+The healing fountain has to recover its strength in order to resurrect a player<br />
+Game is over when all players are dead<br />
+Setting</p>
+
+<p>Teams : 5 players<br />
+Players : 5 players<br />
+Type : PvE -> Team vs the Hybrid Rebel Army<br />
+Reward : War Loot<br />
+Duration: 250 seconds<br />
+Arena<br />
+ </p>
+
+<p>Description:</p>
+
+<p>All players fight against each other until only one remainds on the ground<br />
+The sole remainer wins the arena cup<br />
+You cannot respawn on death<br />
+As the time passes, the walls around the arena narrows down<br />
+Setting</p>
+
+<p>Teams : Single<br />
+Players : 16 players<br />
+Type : PvP<br />
+Reward : Arena Cup<br />
+Duration: 180 seconds<br />
+Boss<br />
+ </p>
+
+<p>Description:</p>
+
+<p>The team of 5 players fights againts the Rebel Boss to defeat him<br />
+The Rebel Boss spawns soldiers using his skill<br />
+Each player has 3 lifes to respawn.<br />
+You cannot level up unless you defeat the boss further advance in the game<br />
+There is a boss for every 5th level and in order to advance, you need to defeat the boss<br />
+Setting</p>
+
+<p>Teams : 5 players<br />
+Players : 5 players<br />
+Type : PvE -> Team vs the Rebel Boss<br />
+Reward : Boss Chest &amp; Level-Up permission<br />
+Duration: 180 seconds<br />
+Skills<br />
+Currently there are 4 unique skills for each elementalist and a 5th dash skill for every element -> In the future, the skill book -not yet implemented- will allow elementalists to learn new abilities</p>
+
+<p> </p>
+
+<p>Earth<br />
+- Nail<br />
+Cooldown : 3 seconds</p>
+
+<p>Damage : 21</p>
+
+<p>Extra Effect: Reduce defense %15 for 5 seconds - tossing effect for 0.2 seconds</p>
+
+<p>Effect Limit: 2 Player</p>
+
+<p>https://youtu.be/g7g5EOZ1bes</p>
+
+<p>- Walls<br />
+Cooldown : 10 seconds</p>
+
+<p>Damage : 20</p>
+
+<p>Extra Effect: Stun for 1.5 seconds</p>
+
+<p>Effect Limit: 4 Player</p>
+
+<p>https://youtu.be/W_HrCqnIa-I</p>
+
+<p>- Rock<br />
+Cooldown : 8 seconds</p>
+
+<p>Damage : 33</p>
+
+<p>Extra Effect: Tossing effect for 0.5 seconds</p>
+
+<p>Effect Limit: -</p>
+
+<p>Rock Pieces<br />
+Damage : 10<br />
+Extra Effect: -<br />
+Effect Limit: 1 Player<br />
+https://youtu.be/jgrtmeqK3Z4</p>
+
+<p>- Untouchable<br />
+Cooldown : 12 seconds<br />
+Damage : -<br />
+Extra Effect: Immune everything for 2 seconds<br />
+https://youtu.be/6rOO3Ao_2fA</p>
+
+<p> </p>
+
+<p>Fire<br />
+- Fire Ball<br />
+Cooldown : 3 seconds<br />
+Damage : 30<br />
+Extra Effect: -<br />
+Range : 8<br />
+Effect Limit: 3 Player<br />
+https://youtu.be/7rwlL0j3iaE</p>
+
+<p>- Dragon Breath<br />
+Cooldown : 12 seconds<br />
+Damage : each 0.25 seconds applies 6 damage for maximum 4 player in area<br />
+Extra Effect: Applies &quot;Silence&quot; effect for every players in area https://youtu.be/t1Hmsync1uc<br />
+- Demon Hall<br />
+Cooldown : 13 seconds</p>
+
+<p>Fire Circle - Damage : 18 - Extra Effect: - - Effect Limit: 5</p>
+
+<p>Hall - Damage : Each 1 seconds applies 4 damage for maximum 5 player in area</p>
+
+<p>Extra Effect: Applies &quot;Heal Prohibition&quot; effect for every player in area<br />
+https://youtu.be/VviSXnWuiN0</p>
+
+<p>- Torch<br />
+Cooldown : 13 seconds<br />
+Damage : -<br />
+Extra Effect: Increase attack %20<br />
+https://youtu.be/_o7iuziJtr4</p>
+
+<p> </p>
+
+<p>Water<br />
+- Needles<br />
+Cooldown : 3 seconds</p>
+
+<p>Each Needle<br />
+Damage : 20<br />
+Extra Effect: Slow %20<br />
+Effect Limit: 1 Player<br />
+https://youtu.be/x2pGI4eKWYo</p>
+
+<p>- Frozen Road<br />
+Cooldown : 10 seconds<br />
+Damage : 15<br />
+Extra Effects: Slow %60 After 2 seconds applies &quot;Move Prohibition&quot; effect for players in area<br />
+Effect Limit: 4 Player<br />
+https://youtu.be/1VixwgBviqs</p>
+
+<p>- Needle Rain<br />
+Cooldown : 8 seconds<br />
+Damage : 35<br />
+Extra Effect: -<br />
+Effect Limit: 4<br />
+https://youtu.be/DGDXee698_c</p>
+
+<p>- Healing Water<br />
+Cooldown : 15 seconds<br />
+Damage : -<br />
+Extra Effects: For 5 seconds, player heal %2 for each 1 seconds<br />
+https://youtu.be/NI51YTMOWqs</p>
+
+<p> </p>
+
+<p>Wind<br />
+- Razor Wave<br />
+Cooldown : 3 seconds<br />
+Damage : 20<br />
+Extra Effect: -<br />
+https://youtu.be/-75CjLw0K8U</p>
+
+<p>- Tornado<br />
+Cooldown : 12 seconds<br />
+Damage : Each 0.75 seconds applies 4 damage<br />
+Extra Effect: Pulls players in.<br />
+https://youtu.be/Vd015l34JBI</p>
+
+<p>- Serial Waves<br />
+Cooldown : 10 seconds<br />
+Damage :</p>
+
+<p>First Two Wave: 15<br />
+Last Wave: 20<br />
+Extra Effects : - Effect Limit: Each wave has 3 player limit.</p>
+
+<p>https://youtu.be/bortFpOxkl0</p>
+
+<p>- Push<br />
+Cooldown : 12 seconds<br />
+Damage : 10<br />
+Extra Effects: Applies tossing effect<br />
+https://youtu.be/nOJpT59fsu0</p>
+
+<p>Equipments<br />
+Wizards can equip an armor and a weapon from a selection of unique items</p>
+
+<p>There are 6 levels to equipments which can be differentiated by color:</p>
+
+<p>(MIN) White -> Green -> Blue -> Yellow -> Purple -> Orange (MAX)<br />
+Each equipment in all levels have 6 typeswith unique effects</p>
+
+<p>Higher level equipments have more effects embedded in them</p>
+
+<p>####### Weapon Lv: White &amp; Green Blue &amp; Yellow Purple &amp; Orange<br />
+Weapon Types: ------------- ------------- ---------------</p>
+
+<p>Cooldown Reducer: Cooldown Stun Attack</p>
+
+<p>Critical Damage Dealer: Critical Chance Critical Damage Damage (to low health)</p>
+
+<p>Armor Penetration: Armor Penetration Slow Defense Reduce</p>
+
+<p>Health Stealer: Health Steal Attack(overtime) Healing (on kill)</p>
+
+<p>Poisoner: Poison Burn Reduced Healing (on foe)</p>
+
+<p>True Damage Dealer: True Damage Cooldown (on kill) Percent Damage</p>
+
+<p>###### Armor Lv: White &amp; Green &amp; Blue Yellow &amp; Purple &amp; Orange<br />
+Armor Types: -------------------- ------------------------</p>
+
+<p>Critical Damage Reducer: Reduced Criticial Damage Defense</p>
+
+<p>Dodger: Dodge Slow (on foe)</p>
+
+<p>Heal Improver: Healing Defense (overtime)</p>
+
+<p>Health Regener: Health Regenaration Health (overtime)</p>
+
+<p>Damage Reflector (Amount): Reflect Damage (by amount) Reduce Health</p>
+
+<p>Damage Reflector (Chance): Reflect Damage (channce) Health Restore (when low)</p>
